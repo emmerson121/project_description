@@ -1,0 +1,547 @@
+body{
+    font:18px/1.5 Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    background-color: #f4f4f4 ;
+    width: 100%;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+/* Global */
+.container{
+    /* padding-right: 20px; */
+    /* width: 100%; */
+    margin:auto;
+    overflow:hidden
+    
+}
+
+/* .contForm{
+    width: 30%;
+} */
+
+ul{
+    margin:0;
+    padding-right: 20px;
+}
+
+.button{
+    background-color: #e8491d;
+    border: 0;
+    padding: 11px 10px;
+    color:#ffffff;
+}
+
+.button_1{
+    /* height:38px; */
+    background-color: #e8491d;
+    border:0;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 2px #e8491d;
+    padding: 3px 10px;
+    color:#ffffff;
+    width: 60px;
+    text-align: center;
+}
+
+.dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 5px;   
+}
+
+/* Header */
+header{
+    background:#35424a;
+    color:#ffffff;
+    padding: 20px 15px;
+    border-bottom:#e8491d 1px solid;
+    
+}
+
+header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding:0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+.web{
+    font-size: 18px;
+}
+header span{
+    color:#e8491d;
+    padding: 20px;
+    font-size: 24px;
+}
+header nav{
+    /* float:right; */
+    margin-top:10;
+    padding-left: 10px;
+}
+
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight:bold;
+
+}
+
+.afford{
+    font-size: 30px;
+    font-weight: 600;
+    /* margin-top: 70px;  */
+}
+
+.par{
+    font-size: 26px;
+    width: 100%;
+    max-width: 85%;
+    margin: 15px auto;
+}
+header a:hover{
+    color:yellow;
+    font-weight:bold;
+}
+
+/* Showcase*/
+#showcase{
+    min-height:400px;
+    /* background: url(./img/main-background.jpg) no-repeat; */
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    text-align:center;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase h1{
+    margin-top:100px;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+#showcase p{
+    font-size:20px;
+}
+
+.wh{
+    color: black;
+    text-decoration: none;
+    padding-left: 6px;
+    margin-bottom: 5px;
+}
+
+.wh:hover{
+    color: #e8491d;
+}
+
+/* Newsletter */
+#newsletter{
+    padding:15px;
+    color: white;
+    background:#35424a;
+}
+
+#newsletter h1{
+    float:left;
+    font-size:15px;
+    padding-left:10px;
+}
+
+#newsletter form{
+    /* float:right; */
+    margin-top:10px;
+    font-size:15px;
+}
+#newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:185px;
+}
+
+.sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+
+}
+.details{
+    margin-bottom: 0px;
+    padding-bottom: 20px
+
+}
+
+.details label{
+    display: inline;
+    margin-top: 3px;
+}
+.details textarea{
+display: block;
+padding-bottom: 20px;
+margin-top: 0px;
+margin-bottom: 0px;
+
+}
+
+.details.success input{
+    border-color: #2ecc71;
+}
+
+.details.error input{
+    border-color: #e74c3c;
+}
+
+.details small{
+    visibility: hidden;
+    position: absolute;
+    bottom:0px;
+    left: 0px;;
+}
+
+details.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+/* Boxes */
+#boxes{
+    margin-top:20px;
+}
+
+#boxes .box{
+    /* float:left; */
+    width: 30%;
+    text-align:center;
+    /* width:440px; */
+    /* margin-before: 1em; */
+}
+
+#boxes .box img{
+    width:90px;
+    height:90px;
+    
+}
+
+.imgClass{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.menu, .logo{
+    display: none;
+}
+/* Sidebar */
+aside#sidebar{
+    /* float: right; */
+    /* width:28%; */
+    margin-top: 10px;
+    padding-right: 8px;
+    width: 40%;
+}
+
+.top{
+    font-size: 30px;
+}
+.side{
+    margin-top: 10px;
+    padding-right: 8px;
+}
+
+.aside .nextBar{
+    width: 80%;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+.aboutUs{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.foot{
+    padding: 45px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forM{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote{
+    margin-bottom: 15px;
+}
+
+.name{
+    width: 70%;
+}
+
+.dev{
+    width: 28%;
+}
+
+.para{
+    font-size: 18px;
+}
+article#main-column{
+/* float: left; */
+/* width: 70%; */
+border: #cccccc;
+margin-bottom: 5px;
+/* margin-left: 5px; */
+/* background: #e6e6e6; */
+/* padding-left: 20px; */
+}
+
+/* .shift{
+    width: 100%;
+}  */
+
+
+/*Services*/
+.page-title{
+    font-size: 33px;
+    font-weight: 600;
+    padding-left: 35px;
+    margin-top: 10px;
+}
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    font-size: 18px;
+}
+footer{
+    background:#e8491d;
+    /* min-height:75px; */
+    padding: 10px 5px;
+    text-align:center; 
+}
+.Message small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.Username small{
+    visibility:visible;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.Email small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.user{
+    color: #fff;
+    font-size: 14px;
+}
+
+.back{
+    background: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe{
+    width: 75%;
+}
+
+.row{
+    width: 45%;
+    height: 100%;
+    background-color: #fff;
+    font-size: 16px;
+    color: #fff;
+    padding: 2px 8px;
+}   
+  
+.wor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0e0b0bba;
+
+}
+
+    /* overflow: hidden; */
+
+
+.row1{
+    /* display: grid; */
+    /* align-items: center; */
+    /* align-items: end; */
+    /* padding: 20px 15px; */
+    padding-top: 8px;
+
+}
+
+.font{
+    display: flex;
+    /* align-items: end; */
+    justify-content: flex-end;
+    /* color: #fff; */
+    padding-right: 10px;
+}
+
+.fy{
+    color: #000;
+    font-size: 20px;
+}
+/*.dark#sidebar{
+    color: #e8491d;
+}*/
+
+
+@media (max-width: 768px) {
+    .uL, .web{
+        display: none;
+    }  
+    
+    .menu, .logo{
+        display: block;
+    }
+
+    .afford{
+        font-size: 24px;
+    }
+
+    .sub{
+        flex-direction: column;
+        padding: 5px 2px;
+    }
+
+    .contForm{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .imgClass{
+        flex-direction: column;
+    }
+
+    #boxes .box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .aweSome{
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .aboutUs{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .name{
+        width: 100%;
+        text-align: center;
+    }
+
+    #side{
+        width: 100%;
+    }
+
+    .dev {
+        width: auto;
+    }
+
+    .foot{
+        padding: 15px 1px;
+    }
+
+    .back{
+        flex-direction: column;
+    }
+
+    ul#services li{
+        padding: 1px 1px;
+    }
+
+    aside#sidebar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top{
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    
+    ul#services li{
+        padding: 10px;
+    }
+    .subscribe{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button_1{
+        width: 18%;
+        text-align: center;
+    }
+/* Trying to make the links get the hover effect*/
+    .row a:hover{
+        color:yellow;
+        font-weight:bold;
+    }
+    
+    /* .straight{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+}
